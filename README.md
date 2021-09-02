@@ -1,0 +1,2 @@
+# BluGenie
+Automated Response and Remediation - there are plenty of powershell frameworks for offense. This is a powershell framework for defense. The only Response and Remediation Framework in PS today offering complete visibility on user endpoints such as servers, laptops and desktops, both stationary and remote, wherever your users may be working from.  You can use this framework for Threat Hunting, automated Response and Remediation also. This framework may also be used for forensic artifact collection except collecting forensic images.
