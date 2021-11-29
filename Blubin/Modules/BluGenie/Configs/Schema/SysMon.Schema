@@ -1,0 +1,178 @@
+#####
+# Event Schema:	SysMon Event (Microsoft-Windows-Sysmon/Operational)
+# Event Sample Properties for ID 1:            
+#       
+#       
+#       Message              : Process Create:
+#                              RuleName: -
+#                              UtcTime: 2021-05-21 00:01:27.132
+#                              ProcessGuid: {005FC6AA-F857-60A6-0E16-000000002A00}
+#                              ProcessId: 4992
+#                              Image: C:\Windows\System32\taskhost.exe
+#                              FileVersion: 6.1.7601.18010 (win7sp1_gdr.121122-1432)
+#                              Description: Host Process for Windows Tasks
+#                              Product: Microsoft® Windows® Operating System
+#                              Company: Microsoft Corporation
+#                              OriginalFileName: taskhost.exe
+#                              CommandLine: taskhost.exe $(Arg0)
+#                              CurrentDirectory: C:\Windows\system32\
+#                              User: NT AUTHORITY\LOCAL SERVICE
+#                              LogonGuid: {005FC6AA-E4DF-605D-E503-000000000000}
+#                              LogonId: 0x3e5
+#                              TerminalSessionId: 0
+#                              IntegrityLevel: System
+#                              Hashes: SHA1=1AB1E31FE9F3347F68B1EEE8FF02F525FC46CCC9,MD5=639774C9ACD063F028F6084ABF5593AD,SHA256=9DFD80610CBBC9188F6C6BC85C87016B0AE42254FC289C2B578E85282BDD9C23,IMPHA
+#                              SH=D9C431646227DBA4B6B2A1313802ED63
+#                              ParentProcessGuid: {005FC6AA-E4DC-605D-0A00-000000002A00}
+#                              ParentProcessId: 508
+#                              ParentImage: C:\Windows\System32\services.exe
+#                              ParentCommandLine: C:\Windows\system32\services.exe
+#       MsgProcessCreate     : 
+#       MsgRuleName          : -
+#       MsgUtcTime           : 2021-05-21 00:01:27.132
+#       MsgProcessGuid       : {005FC6AA-F857-60A6-0E16-000000002A00}
+#       MsgProcessId         : 4992
+#       MsgImage             : C:\Windows\System32\taskhost.exe
+#       MsgFileVersion       : 6.1.7601.18010 (win7sp1_gdr.121122-1432)
+#       MsgDescription       : Host Process for Windows Tasks
+#       MsgProduct           : Microsoft® Windows® Operating System
+#       MsgCompany           : Microsoft Corporation
+#       MsgOriginalFileName  : taskhost.exe
+#       MsgCommandLine       : taskhost.exe $(Arg0)
+#       MsgCurrentDirectory  : C:\Windows\system32\
+#       MsgUser              : NT AUTHORITY\LOCAL SERVICE
+#       MsgLogonGuid         : {005FC6AA-E4DF-605D-E503-000000000000}
+#       MsgLogonId           : 0x3e5
+#       MsgTerminalSessionId : 0
+#       MsgIntegrityLevel    : System
+#       MsgHashes            : SHA1=1AB1E31FE9F3347F68B1EEE8FF02F525FC46CCC9,MD5=639774C9ACD063F028F6084ABF5593AD,SHA256=9DFD80610CBBC9188F6C6BC85C87016B0AE42254FC289C2B578E85282BDD9C23,IMPHASH=D9C43
+#                              1646227DBA4B6B2A1313802ED63
+#       MsgParentProcessGuid : {005FC6AA-E4DC-605D-0A00-000000002A00}
+#       MsgParentProcessId   : 508
+#       MsgParentImage       : C:\Windows\System32\services.exe
+#       MsgParentCommandLine : C:\Windows\system32\services.exe
+#       Id                   : 1
+#       Version              : 5
+#       Qualifiers           : 
+#       Level                : 4
+#       Task                 : 1
+#       Opcode               : 0
+#       Keywords             : -9223372036854775808
+#       RecordId             : 644
+#       ProviderName         : Microsoft-Windows-Sysmon
+#       ProviderId           : 5770385f-c22a-43e0-bf4c-06f5698ffbd9
+#       LogName              : Microsoft-Windows-Sysmon/Operational
+#       ProcessId            : 4028
+#       ThreadId             : 3064
+#       MachineName          : Win7SP1003.TestLab.com
+#       UserId               : S-1-5-18
+#       TimeCreated          : 5/20/2021 8:01:27 PM
+#       ActivityId           : 
+#       RelatedActivityId    : 
+#       ContainerLog         : microsoft-windows-sysmon/operational
+#       MatchedQueryIds      : {}
+#       Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+#       LevelDisplayName     : Information
+#       OpcodeDisplayName    : Info
+#       TaskDisplayName      : Process Create (rule: ProcessCreate)
+#       KeywordsDisplayNames : {}
+#       Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, 
+#                              System.Diagnostics.Eventing.Reader.EventProperty...}
+#       
+#       
+# Event Sample Properties for ID 10:    
+#       Message              : Process accessed:
+#                              RuleName: -
+#                              UtcTime: 2021-05-28 12:23:08.194
+#                              SourceProcessGUID: {005FC6AA-6768-60A4-9412-000000002A00}
+#                              SourceProcessId: 3756
+#                              SourceThreadId: 4404
+#                              SourceImage: C:\Program Files (x86)\Google\Update\1.3.36.82\GoogleCrashHandler.exe
+#                              TargetProcessGUID: {005FC6AA-E0AC-60B0-D41B-000000002A00}
+#                              TargetProcessId: 5748
+#                              TargetImage: C:\Program Files (x86)\Google\Update\GoogleUpdate.exe
+#                              GrantedAccess: 0x1fffff
+#                              CallTrace: C:\Windows\SYSTEM32\ntdll.dll+69aea|C:\Windows\SYSTEM32\wow64.dll+14ec8|C:\Windows\SYSTEM32\wow64.dll+d18f|C:\Windows\SYSTEM32\wow64cpu.dll+2776|C:\Windows\SYSTEM32\wow64.dll+d286|C:\Windows\SYSTEM32\wow64.dll+c69e|C:\Windo
+#                              ws\SYSTEM32\ntdll.dll+998c4|C:\Windows\SYSTEM32\ntdll.dll+4371e|C:\Windows\SysWOW64\ntdll.dll+1fc62(wow64)|C:\Windows\syswow64\KERNELBASE.dll+f369(wow64)|C:\Program Files 
+#                              (x86)\Google\Update\1.3.36.82\GoogleCrashHandler.exe+edbb|C:\Program Files (x86)\Google\Update\1.3.36.82\GoogleCrashHandler.exe+f4f6|C:\Program Files (x86)\Google\Update\1.3.36.82\GoogleCrashHandler.exe+f9f0|C:\Windows\SysWOW64\ntdll.
+#                              dll+701a3(wow64)|C:\Windows\SysWOW64\ntdll.dll+50d48(wow64)|C:\Windows\SysWOW64\ntdll.dll+509b1(wow64)|C:\Windows\syswow64\kernel32.dll+1344d(wow64)|C:\Windows\SysWOW64\ntdll.dll+39802(wow64)|C:\Windows\SysWOW64\ntdll.dll+397d5(wow64)
+#       MsgProcessaccessed   : 
+#       MsgRuleName          : -
+#       MsgUtcTime           : 2021-05-28 12:23:08.194
+#       MsgSourceProcessGUID : {005FC6AA-6768-60A4-9412-000000002A00}
+#       MsgSourceProcessId   : 3756
+#       MsgSourceThreadId    : 4404
+#       MsgSourceImage       : C:\Program Files (x86)\Google\Update\1.3.36.82\GoogleCrashHandler.exe
+#       MsgTargetProcessGUID : {005FC6AA-E0AC-60B0-D41B-000000002A00}
+#       MsgTargetProcessId   : 5748
+#       MsgTargetImage       : C:\Program Files (x86)\Google\Update\GoogleUpdate.exe
+#       MsgGrantedAccess     : 0x1fffff
+#       MsgCallTrace         : C:\Windows\SYSTEM32\ntdll.dll+69aea|C:\Windows\SYSTEM32\wow64.dll+14ec8|C:\Windows\SYSTEM32\wow64.dll+d18f|C:\Windows\SYSTEM32\wow64cpu.dll+2776|C:\Windows\SYSTEM32\wow64.dll+d286|C:\Windows\SYSTEM32\wow64.dll+c69e|C:\Windows\SYSTEM32
+#                              \ntdll.dll+998c4|C:\Windows\SYSTEM32\ntdll.dll+4371e|C:\Windows\SysWOW64\ntdll.dll+1fc62(wow64)|C:\Windows\syswow64\KERNELBASE.dll+f369(wow64)|C:\Program Files (x86)\Google\Update\1.3.36.82\GoogleCrashHandler.exe+edbb|C:\Program 
+#                              Files (x86)\Google\Update\1.3.36.82\GoogleCrashHandler.exe+f4f6|C:\Program Files (x86)\Google\Update\1.3.36.82\GoogleCrashHandler.exe+f9f0|C:\Windows\SysWOW64\ntdll.dll+701a3(wow64)|C:\Windows\SysWOW64\ntdll.dll+50d48(wow64)|C:\Window
+#                              s\SysWOW64\ntdll.dll+509b1(wow64)|C:\Windows\syswow64\kernel32.dll+1344d(wow64)|C:\Windows\SysWOW64\ntdll.dll+39802(wow64)|C:\Windows\SysWOW64\ntdll.dll+397d5(wow64)
+#       Id                   : 10
+#       Version              : 3
+#       Qualifiers           : 
+#       Level                : 4
+#       Task                 : 10
+#       Opcode               : 0
+#       Keywords             : -9223372036854775808
+#       RecordId             : 41646
+#       ProviderName         : Microsoft-Windows-Sysmon
+#       ProviderId           : 5770385f-c22a-43e0-bf4c-06f5698ffbd9
+#       LogName              : Microsoft-Windows-Sysmon/Operational
+#       ProcessId            : 5972
+#       ThreadId             : 4128
+#       MachineName          : Win7SP1003.TestLab.com
+#       UserId               : S-1-5-18
+#       TimeCreated          : 5/28/2021 8:23:08 AM
+#       ActivityId           : 
+#       RelatedActivityId    : 
+#       ContainerLog         : microsoft-windows-sysmon/operational
+#       MatchedQueryIds      : {}
+#       Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+#       LevelDisplayName     : Information
+#       OpcodeDisplayName    : Info
+#       TaskDisplayName      : Process accessed (rule: ProcessAccess)
+#       KeywordsDisplayNames : {}
+#       Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty...}
+#       
+#    
+# Event Notes:
+#	All Event Message Content is parsed and added as new Property fields with a (Msg) Prefix.  
+#	With this Schema file you can update/remap a property name to any name needed to keep queries more consistent.
+# Event File Schema: (YAML)
+#####
+MsgParentCommandLine: ParentCommandLine
+MsgDescription: Description
+MsgCommandLine: CommandLine
+MsgCurrentDirectory: CurrentDirectory
+MsgHashes: Hashes
+MsgImage: Image
+MsgUtcTime: UtcTime
+MsgProcessGuid: ProcessGuid
+MsgCompany: Company
+MsgIntegrityLevel: IntegrityLevel
+Id: EventId
+MsgFileVersion: FileVersion
+MsgUser: User
+MsgRuleName: RuleName
+MsgProduct: Product
+MsgLogonId: LogonId
+MsgProcessId: ProcessId
+MsgOriginalFileName: OriginalFileName
+MsgLogonGuid: LogonGuid
+MsgTerminalSessionId: TerminalSessionId
+MsgParentProcessGuid: ParentProcessGuid
+MsgParentProcessId: ParentProcessId
+MsgParentImage: ParentImage
+MsgCallTrace: CallTrace
+MsgTargetImage: TargetImage
+MsgTargetProcessGUID: TargetProcessGUID
+MsgSourceProcessGUID: SourceProcessGUID
+MsgTargetProcessId: TargetProcessId
+MsgSourceImage: SourceImage
+MsgSourceThreadId: SourceThreadId
+MsgGrantedAccess: GrantedAccess
+MsgSourceProcessId: SourceProcessId

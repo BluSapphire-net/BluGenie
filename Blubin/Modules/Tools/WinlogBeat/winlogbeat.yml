@@ -1,0 +1,51 @@
+winlogbeat.event_logs:
+  - name: Application
+    fields:
+      log: "windows-log"
+      clientid: "be67ec87"
+      sensorid: "IC_DU_S01"
+  - name: Security
+    fields:
+      log: "windows-log"
+      clientid: "be67ec87"
+      sensorid: "IC_DU_S01"
+  - name: System
+    fields:
+      log: "windows-log"
+      clientid: "be67ec87"
+      sensorid: "IC_DU_S01"
+  - name: Microsoft-windows-Sysmon/Operational
+    fields:
+      log: "windows-log"
+      clientid: "be67ec87"
+      sensorid: "IC_DU_S01"
+  - name: Microsoft-windows-PowerShell/Operational
+    fields:
+      log: "windows-log"
+      clientid: "be67ec87"
+      sensorid: "IC_DU_S01"
+  - name: Windows PowerShell
+    fields:
+      log: "windows-log"
+      clientid: "be67ec87"
+      sensorid: "IC_DU_S01"
+  - name: Microsoft-Windows-WMI-Activity/Operational
+    fields:
+      log: "windows-log"
+      clientid: "be67ec87"
+      sensorid: "IC_DU_S01"
+  - name: Microsoft-windows-TaskScheduler/Operational
+    fields:
+      log: "windows-log"
+      clientid: "be67ec87"
+      sensorid: "IC_DU_S01"
+
+output.logstash:
+  # The Logstash hosts
+  codec.json:
+    pretty: true
+  hosts: ["<gw-collectorIP>:12102"]
+
+
+
+  winlogbeat.registry_file: C:/Program Files/winlogbeat/.winlogbeat.yml

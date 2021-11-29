@@ -1,0 +1,1 @@
+SELECT * FROM FormatBGEvent WHERE MsgNewProcessName LIKE '%GoogleUpdate.exe'

@@ -1,0 +1,8 @@
+- Name: Image
+  Value: notepad\+\+\.exe
+- Name: Image
+  Value: NppLauncher\.exe
+- Name: Image
+  Value: eqllib\.exe
+- Name: Image
+  Value: svchost\.exe

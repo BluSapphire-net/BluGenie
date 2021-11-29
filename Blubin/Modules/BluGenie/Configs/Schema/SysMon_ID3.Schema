@@ -1,0 +1,13 @@
+#####
+# Event Schema:	SysMon Event (Microsoft-Windows-Sysmon/Operational)
+# Event Properties for ID 3:            
+# Event Notes:
+#	All Event Message Content is parsed and added as new Property fields with a (Msg) Prefix.  
+#	With this Schema file you can update/remap a property name to any name needed to keep queries more consistent.
+# Event File Schema: (YAML)
+#####
+MsgImage: process_name
+MsgDestinationPort: destination_port
+MsgSourceIp: source_address
+MsgSourcePort: source_port
+ProcessId: pid

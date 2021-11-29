@@ -7,13 +7,13 @@ You can use this framework for Threat Hunting, automated Response and Remediatio
 
 # Overview
 
-## EQL Queries
+## EQL Queries:
 - execute any EQL queries
 - option to add custom fields along with EQL fields
 - run EQL queries on a single machine or multiple systems or all systems on your infrastructure
 - get results in YAML or JSON
 
-## Run Yara Rule Files
+## Run Yara Rule Files:
 - run any of the 100+ yara rule files prebuilt into the tool
 - run any arbitrary yara file downloaded from any TI sources including US-CERT
 - run yara on one or many systems at the time
@@ -48,7 +48,7 @@ Display information of the current remote configuration and accessibility of the
 - Manage remote host with WinRM
 - Enable WinRM with WMI
 - Enable / Disable Remote Desktop Protocol (RDP)
- 
+
 ## File and Folder Audit and Protection:
 Displays file and folder information including
 - Algorithm, Signature, File Permissions, and ADS information
@@ -72,7 +72,7 @@ Displays file and folder information including
   - Using SMB
   - Using WinRM (even if SMB is disabled)
 
-## Registry Audit and Protection
+## Registry Audit and Protection:
 Display registry information including
 - User profile attributes
 - Username
@@ -84,14 +84,14 @@ Display registry information including
 - Convert SID to readable user / service name
 - Convert User / Service name to SID
 - Export Registry Snapshots (.REG format)
- 
-## Network Audit and Protection
+
+## Network Audit and Protection:
 Displays all connections and listening ports and the executable involved in creating each connection
 - Terminate a connection and the executable managing it
 - Query based on any property attribute
 - Convert Foreign Address IP information to Domain Name
 
-## Services Audit and Protection
+## Services Audit and Protection:
 Display information regarding each service and child process including the processing command line that was used in the initialize execution.
 - Query based on all property attributes of any service
 - Query and Manage based on Signature
@@ -106,21 +106,7 @@ Display information regarding each service and child process including the proce
 - Terminate, Pause, or Restart processes
 - Start, Stop, Restart, or Remove Services
 
-## Services Audit and Protection
-Display information regarding each Scheduled task item, and all sub commands, arguments, and hash information.
-- Query based on all property attributes of any Scheduled Task
-- Query and Manage based on Signature
-- Query and Manage based on Algorithm of any nested command
-  - MACTripleDES
-  - MD5
-  - RIPEMD160
-  - SHA1
-  - SHA256
-  - SHA384
-  - SHA512
-- Remove Scheduled Task
- 
-## Threat Hunt and Protection
+## Threat Hunt and Protection:
 Display information regarding COM Object Hijacking, Auto Run Processes, System Prefect Data, and Most Recently Used (MRU) application and file history.
 - Query for possible COM Object Hijacking.  The process searches for (*.EXE, *.DLL, *.AX, *.CPL, and *.OCX) files that can be Hijacked using the registry CLSID.
 - Display MRU Activity
@@ -129,7 +115,7 @@ Display information regarding COM Object Hijacking, Auto Run Processes, System P
 - Enable / Disable Audit Level Process Policy
 - Display what programs are configured to run during system boot-up and session logins
 
-## System Information
+## System Information:
 Display information regarding Active Directory, GPO, System configuration and hardware
 - Display Active Directory Machine Information (Without RSAT)
   - Assigned GPO List
@@ -164,7 +150,13 @@ Display information regarding Active Directory, GPO, System configuration and ha
     - Account expires Date
     - Supported encryption types
     - SAM Account Name
-- Display Windows Updates, Patches, Rollups, Service Packs, Hotfixes, Definition Update Information and a live link to Microsoft Information Database for each identified item.
+- Display Windows Updates
+  - Patches
+  - Rollups
+  - Service Packs
+  - Hotfixes
+  - Definition Update Information
+  - Live link to Microsoft Information Database for each identified item
 - Display System Configuration and Hardware Information for the following items
   - Local Disks
   - Domain
@@ -188,7 +180,7 @@ Display information regarding Active Directory, GPO, System configuration and ha
 - Install / Uninstall and Configure SysMon Service
 - Install / Uninstall and Configure WinLogBeat Service
 
-## Overall Engine Design
+## Overall Engine Design:
 - Run 1 to many managed jobs to thousands of remote systems
 - 3 major execution sections will speed up performance on remote systems
     - Pre – Any command(s) processed here are started first and run synchronously
@@ -196,4 +188,3 @@ Display information regarding Active Directory, GPO, System configuration and ha
     - Post – Any command(s) processed here are started after all the Pre and Parallel commands have finished.  These commands run synchronously
 - Can manage Multiple IP ranges in a single job
 - Jobs can run from the Console Command Line, BluGenie Management Framework, or a JSON configuration file.  Future support for YAML and XML.
-
