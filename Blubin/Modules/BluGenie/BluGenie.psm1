@@ -1215,8 +1215,8 @@
         $null = Set-Alias -Name 'ServiceJob' -Value 'Set-BluGenieServiceJob' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Set-Cores' -Value 'Set-BluGenieCores' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Cores' -Value 'Set-BluGenieCores' -Force -Description 'BluGenie'
-        $null = Set-Alias -Name 'Set-ProcessPriority' -Value 'Set-BluGenieProcessPriority' -Force -Description 'BluGenie'
-        $null = Set-Alias -Name 'Priority' -Value 'Set-BluGenieProcessPriority' -Force -Description 'BluGenie'
+        $null = Set-Alias -Name 'Set-SettingsPriority' -Value 'Set-BluGenieSettingsPriority' -Force -Description 'BluGenie'
+        $null = Set-Alias -Name 'Priority' -Value 'Set-BluGenieSettingsPriority' -Force -Description 'BluGenie'
     #endregion Set Alias's (This was done to move to the new module standard and also support Posh 2)
 
     #region Set Alias's (New Alias Name based on request)
@@ -1371,7 +1371,7 @@
         $null = Set-Alias -Name 'Set-BGUpdateMods' -Value 'Set-BluGenieUpdateMods' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Set-BGServiceJob' -Value 'Set-BluGenieServiceJob' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Set-BGCores' -Value 'Set-BluGenieCores' -Force -Description 'BluGenie'
-        $null = Set-Alias -Name 'Set-BGProcessPriority' -Value 'Set-BluGenieProcessPriority' -Force -Description 'BluGenie'
+        $null = Set-Alias -Name 'Set-BGSettingsPriority' -Value 'Set-BluGenieSettingsPriority' -Force -Description 'BluGenie'
     #endregion Set Alias's (New Alias Name based on request)
 
     #region Dynamically Build Alias List

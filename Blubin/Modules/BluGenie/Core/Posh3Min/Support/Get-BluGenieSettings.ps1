@@ -377,12 +377,16 @@ Function Get-BluGenieSettings
         #endregion BGCores
 
         #region BGPriority
-            If
-            (
-                -Not $global:BGPriority
-            )
-            {
-                [Int]$global:BGPriority = 2
+            Switch -Regex ($global:BGPriority) {
+                '^0$|^1$|^3$|^4$|^5$' {
+                    #Do Nothing
+                    Break
+                }
+
+                Default {
+                    $global:BGPriority = 2
+                }
+
             }
 
             $SettingsHash.priority = $global:BGPriority

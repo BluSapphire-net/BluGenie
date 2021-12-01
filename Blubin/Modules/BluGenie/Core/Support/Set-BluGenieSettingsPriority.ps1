@@ -1,11 +1,11 @@
-#region Set-BluGenieProcessPriority (Function)
-Function Set-BluGenieProcessPriority {
+#region Set-BluGenieSettingsPriority (Function)
+Function Set-BluGenieSettingsPriority {
     <#
         .SYNOPSIS
-            Set-BluGenieProcessPriority is an add-on to manage the Process Priority Status in the BluGenie Console
+            Set-BluGenieSettingsPriority is an add-on to manage the Process Priority Status in the BluGenie Console
 
         .DESCRIPTION
-            Set-BluGenieProcessPriority is an add-on to manage the Process Priority Status in the BluGenie Console.
+            Set-BluGenieSettingsPriority is an add-on to manage the Process Priority Status in the BluGenie Console.
 
             Select the priority level of the cuurent job.
                 0 = Low
@@ -33,17 +33,17 @@ Function Set-BluGenieProcessPriority {
             ValidateSet:
 
         .EXAMPLE
-            Command: Set-BluGenieProcessPriority -Priority 4
+            Command: Set-BluGenieSettingsPriority -Priority 4
             Description: Set the current BluGenie Job to [High] using and Int
             Notes:
 
         .EXAMPLE
-            Command: Set-BluGenieProcessPriority -Priority Realtime
+            Command: Set-BluGenieSettingsPriority -Priority Realtime
             Description: Set the current BluGenie Job to [Realtime] using a String
             Notes:
 
         .EXAMPLE
-            Command: Set-BluGenieProcessPriority Low
+            Command: Set-BluGenieSettingsPriority Low
             Description: Set the current BluGenie Job to [Low] using Position 0 (No Parameter Named)
             Notes:
 
@@ -58,13 +58,13 @@ Function Set-BluGenieProcessPriority {
             Notes:
 
         .EXAMPLE
-            Command: Set-BluGenieProcessPriority -Help
+            Command: Set-BluGenieSettingsPriority -Help
             Description: Call Help Information
             Notes: If Help / WalkThrough is setup as a parameter, this script will be called to setup the Dynamic Help Menu if not the normal
                     Get-Help will be called with the -Full parameter
 
         .EXAMPLE
-            Command: Set-BluGenieProcessPriority -WalkThrough
+            Command: Set-BluGenieSettingsPriority -WalkThrough
             Description: Call Help Information [2]
             Notes: If Help / WalkThrough is setup as a parameter, this script will be called to setup the Dynamic Help Menu if not the normal
                     Get-Help will be called with the -Full parameter
@@ -90,7 +90,7 @@ Function Set-BluGenieProcessPriority {
                 ~ 21.11.3001: * [Michael Arroyo] Posted
     #>
         [cmdletbinding()]
-        [Alias('Set-BGProcessPriority','Set-ProcessPriority','Priority')]
+        [Alias('Set-BGSettingsPriority','Set-SettingsPriority','Priority')]
         Param
         (
             [Parameter(Position=0)]
@@ -132,32 +132,32 @@ Function Set-BluGenieProcessPriority {
                 {$Priority -ne $Null} {
                     Switch -Regex ($Priority) {
                         '^0$|^Low$' {
-                            $Global:BGPriority = 0
+                            [Int32]$Global:BGPriority = 0
                             Break
                         }
 
                         '^1$|^Below Normal$' {
-                            $Global:BGPriority = 1
+                            [Int32]$Global:BGPriority = 1
                             Break
                         }
 
                         '^2$|^Normal$' {
-                            $Global:BGPriority = 2
+                            [Int32]$Global:BGPriority = 2
                             Break
                         }
 
                         '^3$|^Above Normal$' {
-                            $Global:BGPriority = 3
+                            [Int32]$Global:BGPriority = 3
                             Break
                         }
 
                         '^4$|^High$' {
-                            $Global:BGPriority = 4
+                            [Int32]$Global:BGPriority = 4
                             Break
                         }
 
                         '^5$|^Realtime$' {
-                            $Global:BGPriority = 5
+                            [Int32]$Global:BGPriority = 5
                             Break
                         }
                     }
@@ -183,4 +183,4 @@ Function Set-BluGenieProcessPriority {
             }
         #endregion Main
     }
-    #endregion Set-BluGenieProcessPriority (Function)
+    #endregion Set-BluGenieSettingsPriority (Function)
