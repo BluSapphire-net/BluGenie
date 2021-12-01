@@ -2,70 +2,80 @@
 Function Set-BluGenieProcessPriority {
     <#
         .SYNOPSIS
-            Set-BluGenieProcessPriority is an add-on to manage the Debugger Status in the BluGenie Console
-    
+            Set-BluGenieProcessPriority is an add-on to manage the Process Priority Status in the BluGenie Console
+
         .DESCRIPTION
-            Set-BluGenieProcessPriority is an add-on to manage the Debugger status in the BluGenie Console.
-    
-            Debugger will enable logging of the BluGenie debug information to $env:SystemDrive\Windows\Temp\BluGenieDebug.txt
-            Data includes:
-                o The the BluGenie Arguments passed to this host
-                o The current BluGenie Module Path
-                o The Current PowerShell Execution Policy
-                o All System, Current Session, and Current Script Variables
-    
-        .PARAMETER SetTrue
-            Description: Enable debugging
-            Notes:
+            Set-BluGenieProcessPriority is an add-on to manage the Process Priority Status in the BluGenie Console.
+
+            Select the priority level of the cuurent job.
+                0 = Low
+                1 = Below Normal
+                2 = Normal
+                3 = Above Normal
+                4 = High
+                5 = Realtime
+
+        .PARAMETER Priority
+            Description:  Select the priority level of the cuurent job.
+            Notes:  0 = Low
+                    1 = "Below Normal"
+                    2 = Normal
+                    3 = "Above Normal"
+                    4 = High
+                    5 = Realtime
             Alias:
-            ValidateSet:
-    
-        .PARAMETER SetFalse
-            Description: Disable debugging
-            Notes:
-            Alias:
-            ValidateSet:
-    
+            ValidateSet: '0','Low','1','Below Normal','2','Normal','3','Above Normal','4','High','5','Realtime'
+
         .PARAMETER Walkthrough
             Description:  Start the dynamic help menu system to help walk through the current command and all of the parameters
             Notes:
             Alias: Help
             ValidateSet:
-    
+
         .EXAMPLE
-            Command: Set-BluGenieProcessPriority
-            Description: Toggle the Debugger setting (True to False or False to True)
+            Command: Set-BluGenieProcessPriority -Priority 4
+            Description: Set the current BluGenie Job to [High] using and Int
             Notes:
-    
+
         .EXAMPLE
-            Command: Set-BluGenieProcessPriority -SetTrue
-            Description: Enable debugging
+            Command: Set-BluGenieProcessPriority -Priority Realtime
+            Description: Set the current BluGenie Job to [Realtime] using a String
             Notes:
-    
+
         .EXAMPLE
-            Command: Set-BluGenieProcessPriority -SetFalse
-            Description: Disable debugging
+            Command: Set-BluGenieProcessPriority Low
+            Description: Set the current BluGenie Job to [Low] using Position 0 (No Parameter Named)
             Notes:
-    
+
+        .EXAMPLE
+            Command: Set-BGProcessPriority Normal
+            Description: Set the current BluGenie Job to [Normal] using the ShorHand BluGenie Alias
+            Notes:
+
+        .EXAMPLE
+            Command: Priority Normal
+            Description: Set the current BluGenie Job to [Normal] using the ShorHand Alias
+            Notes:
+
         .EXAMPLE
             Command: Set-BluGenieProcessPriority -Help
             Description: Call Help Information
             Notes: If Help / WalkThrough is setup as a parameter, this script will be called to setup the Dynamic Help Menu if not the normal
                     Get-Help will be called with the -Full parameter
-    
+
         .EXAMPLE
             Command: Set-BluGenieProcessPriority -WalkThrough
             Description: Call Help Information [2]
             Notes: If Help / WalkThrough is setup as a parameter, this script will be called to setup the Dynamic Help Menu if not the normal
                     Get-Help will be called with the -Full parameter
-    
+
         .OUTPUTS
             TypeName: String
-    
+
         .NOTES
-    
+
             * Original Author           : Michael Arroyo
-            * Original Build Version    : 20.06.0201
+            * Original Build Version    : 21.11.3001
             * Latest Author             :
             * Latest Build Version      :
             * Comments                  :
@@ -77,10 +87,10 @@ Function Set-BluGenieProcessPriority {
                 ~ Invoke-WalkThrough - Invoke-WalkThrough is an interactive help menu system
                 ~ Get-ErrorAction - Get-ErrorAction will round up any errors into a simple object
             * Build Version Details     :
-                ~ 20.06.0201: * [Michael Arroyo] Posted
+                ~ 21.11.3001: * [Michael Arroyo] Posted
     #>
         [cmdletbinding()]
-        [Alias('Set-BGProcessPriority','Set-ProcessPriority','ProcessPriority')]
+        [Alias('Set-BGProcessPriority','Set-ProcessPriority','Priority')]
         Param
         (
             [Parameter(Position=0)]
