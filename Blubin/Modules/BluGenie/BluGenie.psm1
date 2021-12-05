@@ -1076,7 +1076,6 @@
         $null = Set-Alias -Name 'Wipe' -Value 'Invoke-BluGenieWipe' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Settings' -Value 'Get-BluGenieSettings' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'SetTrap' -Value 'Set-BluGenieTrapping' -Force -Description 'BluGenie'
-        $null = Set-Alias -Name 'Set-Trap' -Value 'Set-BluGenieTrapping' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Trap' -Value 'Set-BluGenieTrapping' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'JobId' -Value 'Set-BluGenieJobId' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'SetDebug' -Value 'Set-BluGenieDebugger' -Force -Description 'BluGenie'
@@ -1190,7 +1189,6 @@
         $null = Set-Alias -Name 'Set-SessionInfo' -Value 'Set-BluGenieSessionInfo' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Set-Systems' -Value 'Set-BluGenieSystems' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Set-ThreadCount' -Value 'Set-BluGenieThreadCount' -Force -Description 'BluGenie'
-        $null = Set-Alias -Name 'Set-Trapping' -Value 'Set-BluGenieTrapping' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Show-GUI' -Value 'Show-BluGenieGUI' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Show-More' -Value 'Show-BluGenieMore' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Start-NewProcess' -Value 'Start-BluGenieNewProcess' -Force -Description 'BluGenie'
@@ -1327,7 +1325,6 @@
         $null = Set-Alias -Name 'Set-BGSessionInfo' -Value 'Set-BluGenieSessionInfo' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Set-BGSystems' -Value 'Set-BluGenieSystems' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Set-BGThreadCount' -Value 'Set-BluGenieThreadCount' -Force -Description 'BluGenie'
-        $null = Set-Alias -Name 'Set-BGTrapping' -Value 'Set-BluGenieTrapping' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Show-BGGUI' -Value 'Show-BluGenieGUI' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Show-BGMore' -Value 'Show-BluGenieMore' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Start-BGNewProcess' -Value 'Start-BluGenieNewProcess' -Force -Description 'BluGenie'
@@ -1374,6 +1371,7 @@
         $null = Set-Alias -Name 'Set-BGCores' -Value 'Set-BluGenieCores' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Set-BGSettingsPriority' -Value 'Set-BluGenieSettingsPriority' -Force -Description 'BluGenie'
         $null = Set-Alias -Name 'Set-BGJobMemory' -Value 'Set-BluGenieJobMemory' -Force -Description 'BluGenie'
+        $null = Set-Alias -Name 'Set-BGTrap' -Value 'Set-BluGenieTrapping' -Force -Description 'BluGenie'
     #endregion Set Alias's (New Alias Name based on request)
 
     #region Dynamically Build Alias List
