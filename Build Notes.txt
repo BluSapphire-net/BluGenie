@@ -5527,3 +5527,7 @@ Posted Build#21.11.0801
 		o [Michael Arroyo] Set-BluGenieCores is an add-on to control how many Cores to use while in the BluGenie Console
 							Select the amount of cores you want this job to use.  Default is (ALL).
 							Core information is pulled from the ($env:NUMBER_OF_PROCESSORS) variable.
+	[Set-BluGenieJobMemory]
+		o [Michael Arroyo] Set-BluGenieJobMemory is an add-on to control the Job Memory used while processing a BluGenie Job
+							Select the amount of Memory you want this job to use.  Default is (512mb).
+							Memory information is pulled from (ClassName Win32_PhysicalMemory)

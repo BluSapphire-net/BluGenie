@@ -1009,7 +1009,16 @@
 				o [Michael Arroyo] Force all managed BluGenie files and folders to be updated on the remote machine
 			[Set-BluGenieServiceJob]
 				o [Michael Arroyo] Send the artifact to the remote machine to be run by the BluGenie Service.
-									Note: This will only work if the BluGenie service is running. If not, the artifact will fallback to the remote connection execution process.
+									Note: This will only work if the BluGenie service is running. If not, the artifact will fallback to the remote
+											connection execution process.
+			[Set-BluGenieCores]
+				o [Michael Arroyo] Set-BluGenieCores is an add-on to control how many Cores to use while in the BluGenie Console
+									Select the amount of cores you want this job to use.  Default is (ALL).
+									Core information is pulled from the ($env:NUMBER_OF_PROCESSORS) variable.
+			[Set-BluGenieJobMemory]
+				o [Michael Arroyo] Set-BluGenieJobMemory is an add-on to control the Job Memory used while processing a BluGenie Job
+									Select the amount of Memory you want this job to use.  Default is (512mb).
+									Memory information is pulled from (ClassName Win32_PhysicalMemory)
 #>
 @{
 
