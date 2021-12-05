@@ -27,6 +27,23 @@
                 o PostCommands
                 o FullDumpPath
 
+            Command Alias:
+                o Set-BGTrap
+                o SetTrap
+                o Trap (For Help Only - "Trap" is a Posh Built-In Command)
+
+        .PARAMETER SetTrue
+            Description: Set Trapping Information Flag to $true
+            Notes:
+            Alias:
+            ValidateSet:
+
+        .PARAMETER SetFalse
+            Description: Set Trapping Information Flag to $false
+            Notes:
+            Alias:
+            ValidateSet:
+
         .PARAMETER Walkthrough
             Description: An automated process to walk through the current function and all the parameters
             Notes:
@@ -67,7 +84,7 @@
         #>
 
         [CmdletBinding(ConfirmImpact='Medium')]
-        [Alias('SetTrap','Set-Trap','Trap')]
+        [Alias('Set-BGTrap','SetTrap','Trap')]
         Param
         (
             [Switch]$SetTrue,
