@@ -188,3 +188,4 @@ Display information regarding Active Directory, GPO, System configuration and ha
     - Post – Any command(s) processed here are started after all the Pre and Parallel commands have finished.  These commands run synchronously
 - Can manage Multiple IP ranges in a single job
 - Jobs can run from the Console Command Line, BluGenie Management Framework, or a JSON configuration file.  Future support for YAML and XML.
+- Over 150 Functions.  For the Full Documentation, Function list, and Tactical Artifacts check out the manual [here](https://docs.blusapphire.io/blugenie)
